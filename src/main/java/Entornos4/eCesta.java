@@ -2,23 +2,47 @@ package Entornos4;
 /**
  * @author juanlu
  */
+
+
 public class eCesta {
+    
+class PruebaGitHub{
+    public PruebaGitHub(){
+        eCesta bag= new eCesta("Acebal Rico",100, "47078234V");
+try {
+
+                    System.out.println(" Modificación 1");
+
+                     bag.ActualizarBono(-50);
+
+                 } catch (Exception e) {
+
+                           System.out.print("Fallo…….");
+
+                            }
+}
+}
+    
     /*Propiedades de la Clase eCesta*/
     private String comercio;
     private double bono;
     private String usuario;
     private double extra=10;
     /* Constructor sin argumentos */
-    public eCesta (){}
+    public eCesta (){
+            }
     /*Constructor con parámetros*/
     public eCesta (String comercio, double bono, String usuario) 
     {
+        
         this.comercio=comercio;
         this.bono=bono+extra; 
-        this.usuario=usuario;}
+        this.usuario=usuario;
+    }
     
      public eCesta (String comercio, double bono, String usuario, double extra) 
     {
+
         this.comercio=comercio;
         this.bono=bono+extra; 
         this.usuario=usuario;}
